@@ -1,3 +1,71 @@
+@media (max-width: 480px) {
+  * {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header .header h1 {
+    font-size: 1.5em;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .topnav a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; /* Zorgt ervoor dat de container de hele viewport breedte gebruikt */
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .col-3, .col-9 {
+    width: 100vw; /* Zorgt ervoor dat ze de volledige breedte van het scherm innemen */
+    min-width: 100vw;
+    margin: 0;
+    padding: 10px;
+  }
+  .col-3 {
+    width: 100vw;
+    min-width: 100vw;
+    margin: 0;
+    padding: 10px;
+    background-color: #f3c79a;
+  }
+  img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    color: white;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 [class*="col-"] {
 float: left;
